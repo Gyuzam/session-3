@@ -3,13 +3,13 @@ package ru.sbt.jschool.session3.problem2;
 import java.util.HashMap;
 
 public class Parking {
-    public HashMap<Long, Long> getCarsIn() {
-        return carsIn;
-    }
-
     private HashMap<Long, Long> carsIn = new HashMap<>();
     private Long capacity;
     private float hourCost;
+    
+    public HashMap<Long, Long> getCarsIn() {
+        return carsIn;
+    }
 
     public Parking(Long capacity, float hCost) {
         this.capacity = capacity;
